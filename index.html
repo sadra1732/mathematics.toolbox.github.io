@@ -1,408 +1,241 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جعبه ابزار ریاضیات | Mathematics Toolbox</title>
-    <link rel="stylesheet" href="https://mega.nz/file/uPgXBK7Z#JA9HZ01g2MCTMBOJo1QUXeksOgTxLhfNhvBzCr1qiK8">
-    <style>
-        /* فونت وزیر (نسخه سبک) */
-        @font-face {
-            font-family: 'Vazir';
-            src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
+  <meta charset="UTF-8">
+  <!-- 📱 این تگ برای واکنش‌گرایی (Responsive) در موبایل حیاتی است -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 🔑 تگ‌های سئو به‌روز شده با کلمات کلیدی بیشتر -->
+  <title>دانلود جعبه ابزار ریاضیات فارسی | Mathematics Toolbox</title>
+  <meta name="description" content="دانلود رایگان جعبه ابزار ریاضیات - برنامه قدرتمند و فارسی برای حل مسائل پیچیده جبر، هندسه و نظریه اعداد با بیش از ۳۲ ابزار تخصصی. ابزار حل مسائل ریاضی برای دانش آموزان و دانشجویان.">
+  <meta name="keywords" content="دانلود جعبه ابزار ریاضیات, Mathematics Toolbox, ابزار ریاضی فارسی, صدرا حاتمی, حل معادلات, ریاضی دبیرستان, حل مسئله ریاضی, ک.م.م, ب.م.م, آموزش ریاضی, نرم افزار ریاضی رایگان">
+  <meta name="author" content="صدرا حاتمی">
+  <meta property="og:title" content="دانلود رایگان جعبه ابزار ریاضیات - Mathematics Toolbox">
+  <meta property="og:description" content="بیش از ۳۲ ابزار ریاضی حرفه‌ای برای جبر، هندسه و نظریه اعداد. برنامه کاربردی ویندوز.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sadra1732.github.io/Mathematics_Toolbox/">
+
+  <!-- 🖼️ آیکون برای تب مرورگر (در صورت وجود فایل آیکون) -->
+  <link rel="icon" href="icon.png" type="image/png">
+
+  <!-- 🔎 کد تأیید گوگل سرچ کنسول -->
+  <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" />
+
+  <style>
+    /* ------------------- استایل‌های اصلی و فونت ------------------- */
+    @import url('https://v1.fontiran.com/css/vazirmatn.css'); /* فونت محبوب برای خوانایی بهتر */
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background-color: #121212;
+      color: #EAEAEA;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3 {
+      color: #FF9800;
+      text-align: center;
+    }
+
+    a {
+      color: #00B0FF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ------------------- بخش هدر (با تصویر پس‌زمینه) ------------------- */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      /* لینک بک‌گراند شما که در مرحله قبل مشخص شد */
+      background: url('https://mega.nz/file/CXAFxJzY#r5p68xsc9LGvjyrMkN6MrbRw4KAJCy01LZb65lppueo') center/cover no-repeat;
+      color: white;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.65); /* کمی تیره‌تر برای خوانایی بهتر روی هر عکسی */
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+        font-size: 2.5em; /* کوچک‌تر در موبایل */
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    /* ------------------- محتوای اصلی (برای واکنش‌گرایی) ------------------- */
+    section {
+      padding: 25px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .download-btn {
+      display: block; /* در موبایل عرض کامل بگیرد */
+      background: #00B0FF; /* رنگ آبی برای دکمه دانلود اصلی */
+      color: #fff;
+      padding: 18px 30px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 20px auto;
+      width: 80%; /* عرض ۸۰٪ در موبایل */
+      max-width: 350px; /* حداکثر عرض مشخص */
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #0091EA;
+    }
+
+    ul {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+
+    /* ------------------- Media Query برای دسکتاپ (اندازه بزرگتر) ------------------- */
+    @media (min-width: 768px) {
+        header h1 {
+            font-size: 3.5em;
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Vazir', 'B Titr', 'Segoe UI', Tahoma, Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: #e0e0e0;
-            line-height: 1.8;
-            direction: rtl;
-        }
-        a {
-            text-decoration: none;
-            color: #FF9800;
-            transition: color 0.3s;
-        }
-        a:hover {
-            color: #ffb74d;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background-color: #2d2d2d;
-            padding: 20px 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            border-bottom: 3px solid #FF9800;
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .logo h1 {
-            font-size: 2rem;
-            color: #FF9800;
-            font-weight: bold;
-        }
-        .logo p {
-            font-size: 1rem;
-            color: #aaa;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-        nav ul li a {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #fff;
-        }
-        nav ul li a:hover {
-            color: #FF9800;
-        }
-        .btn {
+        .download-btn {
+            width: auto; /* عرض کامل نباشد در دسکتاپ */
             display: inline-block;
-            background-color: #0078d7;
-            color: #fff;
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-size: 1.3rem;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 4px 10px rgba(0,120,215,0.4);
         }
-        .btn i {
-            margin-left: 10px;
-        }
-        .btn:hover {
-            background-color: #005a9e;
-            transform: translateY(-2px);
-        }
-        .btn-download {
-            background-color: #4CAF50;
-            box-shadow: 0 4px 10px rgba(76,175,80,0.4);
-        }
-        .btn-download:hover {
-            background-color: #3d8b40;
-        }
-        .hero {
-            background: linear-gradient(135deg, #2d2d2d, #1e1e1e);
-            padding: 80px 0;
-            text-align: center;
-            border-bottom: 2px solid #444;
-        }
-        .hero h2 {
-            font-size: 3rem;
-            color: #FF9800;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.4rem;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            color: #ccc;
-        }
-        .hero .btn-group {
+        .flex-container {
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: right;
         }
-        .section {
-            padding: 70px 0;
-            border-bottom: 2px solid #333;
+        .flex-item {
+            width: 48%;
         }
-        .section-title {
-            font-size: 2.2rem;
-            color: #FF9800;
-            text-align: center;
-            margin-bottom: 50px;
-            position: relative;
-        }
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 100px;
-            height: 3px;
-            background-color: #FF9800;
-            margin: 15px auto 0;
-        }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .feature-card {
-            background-color: #2d2d2d;
-            border-radius: 15px;
-            padding: 30px 20px;
-            text-align: center;
-            border: 1px solid #444;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-            border-color: #FF9800;
-        }
-        .feature-card i {
-            font-size: 3rem;
-            color: #FF9800;
-            margin-bottom: 20px;
-        }
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #fff;
-        }
-        .feature-card p {
-            color: #aaa;
-            font-size: 1rem;
-        }
-        .requirements, .install {
-            background-color: #2d2d2d;
-            border-radius: 20px;
-            padding: 40px;
-            margin-top: 30px;
-        }
-        .requirements h3, .install h3 {
-            font-size: 2rem;
-            color: #FF9800;
-            margin-bottom: 25px;
-        }
-        .requirements ul, .install ul {
-            list-style: none;
-            padding-right: 20px;
-        }
-        .requirements li, .install li {
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-        }
-        .requirements li i, .install li i {
-            margin-left: 15px;
-            color: #4CAF50;
-            font-size: 1.3rem;
-        }
-        .download-box {
-            background-color: #1e1e1e;
-            border-radius: 30px;
-            padding: 50px;
-            text-align: center;
-            border: 2px dashed #FF9800;
-        }
-        .download-box p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-        }
-        .version {
-            color: #FF9800;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-        .footer {
-            background-color: #0f0f0f;
-            padding: 40px 0;
-            text-align: center;
-            color: #777;
-        }
-        .footer a {
-            color: #FF9800;
-        }
-        .footer .social {
-            margin-top: 20px;
-        }
-        .footer .social a {
-            font-size: 1.5rem;
-            margin: 0 10px;
-        }
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            nav ul {
-                margin-top: 20px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .hero h2 {
-                font-size: 2.2rem;
-            }
-            .hero p {
-                font-size: 1.1rem;
-            }
-            .section-title {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <div class="container header-content">
-            <div class="logo">
-                <h1>📐 جعبه ابزار ریاضیات</h1>
-                <p>نسخه 1.7.22 | 1404/11/9</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">خانه</a></li>
-                    <li><a href="#features">امکانات</a></li>
-                    <li><a href="#download">دانلود</a></li>
-                    <li><a href="#docs">مستندات</a></li>
-                    <li><a href="#contact">تماس</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>⚡ قدرتمندترین جعبه ابزار ریاضیات فارسی</h2>
-            <p>بیش از ۳۲ ابزار تخصصی برای حل مسائل جبر، هندسه، نظریه اعداد و ... با طراحی زیبا و رابط کاربری آسان</p>
-            <div class="btn-group">
-                <a href="#download" class="btn btn-download"><i class="fas fa-download"></i> دانلود نسخه ویندوز</a>
-                <a href="#features" class="btn"><i class="fas fa-cogs"></i> مشاهده امکانات</a>
-            </div>
-        </div>
-    </section>
+  <header id="home">
+    <h1>⚡ جعبه ابزار ریاضیات (Mathematics Toolbox)</h1>
+    <p>بیش از ۳۲ ابزار تخصصی برای حل مسائل جبر، هندسه، نظریه اعداد و ... با طراحی زیبا و رابط کاربری آسان</p>
+    <a class="download-btn" href="https://mega.nz/file/uPgXBK7Z#JA9HZ01g2MCTMBOJo1QUXeksOgTxLhfNhvBzCr1qiK8" target="_blank">
+      📥 دانلود رایگان نسخه ویندوز
+    </a>
+    <a class="download-btn" style="background-color: #FF9800; margin-top: 10px;" href="#features">مشاهده امکانات</a>
+  </header>
 
-    <section id="features" class="section">
-        <div class="container">
-            <h2 class="section-title">✨ امکانات برنامه</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-sort-numeric-up-alt"></i>
-                    <h3>غربال اعداد اول</h3>
-                    <p>پیدا کردن اعداد اول در هر بازه با الگوریتم غربال اراتستن</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-calculator"></i>
-                    <h3>ب.م.م و ک.م.م</h3>
-                    <p>محاسبه بزرگترین مقسوم‌علیه مشترک و کوچکترین مضرب مشترک</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-fraction"></i>
-                    <h3>کسر مصری</h3>
-                    <p>تبدیل کسر معمولی به مجموع کسرهای واحد</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>تابع فی اویلر</h3>
-                    <p>محاسبه φ(n) و نمایش عوامل اول</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-shapes"></i>
-                    <h3>رسم اشکال هندسی</h3>
-                    <p>رسم n-ضلعی منتظم، چندضلعی دلخواه و محاسبات مربوطه</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-square-root-alt"></i>
-                    <h3>حل معادلات</h3>
-                    <p>معادله درجه دوم، دستگاه معادلات، تجزیه و ساده‌سازی عبارات جبری</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-vector-square"></i>
-                    <h3>بردارها</h3>
-                    <p>برآیند و تجزیه بردارها به مولفه‌های x و y</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-sync-alt"></i>
-                    <h3>تقارن و هم‌نهشتی</h3>
-                    <p>بررسی تشابه، تقارن نسبت به خط و نقطه، هم‌نهشتی مثلث‌ها</p>
-                </div>
-            </div>
+  <section id="features">
+    <h2>✨ امکانات کلیدی برنامه</h2>
+    
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>💡 نظریه اعداد و محاسبات پایه</h3>
+            <ul>
+                <li>**غربال اعداد اول:** پیدا کردن اعداد اول در هر بازه با الگوریتم غربال اراتستن.</li>
+                <li>**ب.م.م و ک.م.م:** محاسبه دقیق بزرگترین مقسوم‌علیه مشترک و کوچکترین مضرب مشترک.</li>
+                <li>**کسر مصری:** تبدیل کسر معمولی به مجموع کسرهای واحد (ابزار تخصصی).</li>
+                <li>**تابع فی اویلر:** محاسبه $\varphi(n)$ و نمایش عوامل اول.</li>
+            </ul>
         </div>
-    </section>
+        <div class="flex-item">
+            <h3>📐 هندسه و بردارها</h3>
+            <ul>
+                <li>**رسم اشکال:** رسم n-ضلعی منتظم، چندضلعی دلخواه و محاسبات مربوطه (مساحت، محیط).</li>
+                <li>**بردارها:** برآیند و تجزیه بردارها به مولفه‌های $x$ و $y$ در صفحه.</li>
+                <li>**تقارن و هم‌نهشتی:** بررسی تشابه، تقارن نسبت به خط و نقطه، هم‌نهشتی مثلث‌ها.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="flex-container" style="margin-top: 30px;">
+        <div class="flex-item">
+            <h3>🧮 جبر و معادلات</h3>
+            <ul>
+                <li>**حل معادلات:** حل معادله درجه دوم، دستگاه معادلات خطی، و حل انواع معادلات (با استفاده از SymPy).</li>
+                <li>**تجزیه و ساده‌سازی:** تجزیه کامل عبارات جبری و ساده‌سازی عبارت‌های پیچیده.</li>
+                <li>**دنباله‌های خاص:** محاسبه اعداد فیبوناچی و فیثاغورثی.</li>
+            </ul>
+        </div>
+        <div class="flex-item">
+            <h3>📈 آمار و احتمال</h3>
+            <ul>
+                <li>**آمار مقدماتی:** محاسبه میانگین، میانه، نما و انحراف معیار.</li>
+                <li>**احتمالات:** محاسبه احتمال پیشامدهای ساده و ترکیبی.</li>
+            </ul>
+        </div>
+    </div>
+  </section>
 
-    <section id="docs" class="section">
-        <div class="container">
-            <h2 class="section-title">📘 توضیحات و راهنما</h2>
-            <div class="requirements">
-                <h3><i class="fas fa-info-circle"></i> درباره برنامه</h3>
-                <p style="font-size: 1.2rem; margin-bottom: 20px;">
-                    این برنامه یک جعبه ابزار کامل ریاضیات شامل بیش از ۳۲ ابزار مختلف است که برای حل مسائل جبر، معادله، هندسه و نظریه اعداد طراحی شده است.
-                </p>
-                <p style="font-size: 1.1rem; color: #FF9800; margin-bottom: 30px;">
-                    <i class="fas fa-quote-right"></i> مریم میرزاخانی: «بدون علاقه داشتن به ریاضی ممکن است آن را سرد و بیهوده بیابید. اما ریاضیات زیباییِ خود را تنها به افراد صبور نشان می‌دهد.»
-                </p>
-                <h3><i class="fas fa-tachometer-alt"></i> نیازمندی‌های سیستم</h3>
-                <ul>
-                    <li><i class="fas fa-windows"></i> ویندوز ۷، ۸، ۱۰، ۱۱</li>
-                    <li><i class="fas fa-memory"></i> حداقل ۴ گیگابایت رم</li>
-                    <li><i class="fas fa-hdd"></i> ۵۰۰ مگابایت فضای خالی</li>
-                </ul>
-            </div>
-            <div class="install" style="margin-top: 40px;">
-                <h3><i class="fas fa-download"></i> راهنمای نصب</h3>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> فایل Mathematics Toolbox.exe را از بخش دانلود دریافت کنید.</li>
-                    <li><i class="fas fa-check-circle"></i> فایل را اجرا کنید (در صورت نیاز Run as Administrator).</li>
-                    <li><i class="fas fa-check-circle"></i> در اولین اجرا ممکن است کمی زمان ببرد.</li>
-                    <li><i class="fas fa-check-circle"></i> برنامه آماده استفاده است.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <section id="download">
+    <h2>📥 دانلود مستقیم برنامه</h2>
+    <p style="font-size: 1.1em; color: #FFD700;">نسخه نهایی: 1.7.22 (تاریخ انتشار: ۱۴۰۴/۱۱/۹)</p>
+    <p>فایل اجرایی ویندوز (بدون نیاز به نصب) – حجم تقریبی ۱۵ مگابایت.</p>
+    
+    <a class="download-btn" href="https://mega.nz/file/uPgXBK7Z#JA9HZ01g2MCTMBOJo1QUXeksOgTxLhfNhvBzCr1qiK8" target="_blank">
+      ✅ دانلود برنامه از MEGA
+    </a>
+    <p style="font-size: 0.9em; margin-top: 15px;">فایل توسط آنتی‌ویروس بررسی شده است.</p>
+  </section>
 
-    <section id="download" class="section">
-        <div class="container">
-            <h2 class="section-title">📥 دانلود برنامه</h2>
-            <div class="download-box">
-                <p class="version">نسخه 1.7.22 – آخرین بروزرسانی: ۱۴۰۴/۱۱/۹</p>
-                <p>فایل اجرایی ویندوز (بدون نیاز به نصب)</p>
-                <a href="https://mega.nz/file/uPgXBK7Z#JA9HZ01g2MCTMBOJo1QUXeksOgTxLhfNhvBzCr1qiK8" target="_blank" class="btn btn-download" style="font-size: 1.5rem; padding: 20px 60px;" download>
-                    <i class="fas fa-download"></i> دانلود مستقیم
-                </a>
-                <p style="margin-top: 30px; font-size: 1rem; color: #aaa;">
-                    حجم: حدود ۱۵ مگابایت | پس از دانلود، فایل را اجرا کنید.
-                </p>
-                <p style="margin-top: 20px; font-size: 0.9rem; color: #777;">
-                    <i class="fas fa-shield-alt"></i> فایل توسط آنتی‌ویروس بررسی شده است.
-                </p>
-            </div>
+  <section id="docs">
+    <h2>📘 توضیحات فنی و مستندات</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>درباره برنامه</h3>
+            <p>این برنامه توسط صدرا حاتمی با زبان پایتون و کتابخانه‌های `PyQt5` و `SymPy` توسعه یافته تا نیاز کاربران فارسی‌زبان به ابزارهای ریاضی دقیق را برطرف کند.</p>
+            <p><strong>نکته مهم:</strong> برای عملکرد کامل، نیاز به نصب کتابخانه‌های خارجی ذکر شده است (در فایل اجرایی نصب شده‌اند).</p>
         </div>
-    </section>
+        <div class="flex-item">
+            <h3>نیازمندی‌های سیستم</h3>
+            <ul>
+                <li>سیستم عامل: ویندوز ۷، ۸، ۱۰، ۱۱</li>
+                <li>رم: حداقل ۴ گیگابایت</li>
+                <li>فضای مورد نیاز: ۵۰۰ مگابایت</li>
+            </ul>
+        </div>
+    </div>
+  </section>
 
-    <section id="contact" class="section" style="border-bottom: none;">
-        <div class="container">
-            <h2 class="section-title">📞 ارتباط با ما</h2>
-            <div style="text-align: center; font-size: 1.3rem;">
-                <p><i class="fas fa-envelope"></i> ایمیل پشتیبانی: <a href="mailto:mathematics.toolbox.sadra@gmail.com">mathematics.toolbox.sadra@gmail.com</a></p>
-                <p><i class="fas fa-globe"></i> وبلاگ برنامه: <a href="https://mathtoolbox.blogix.ir" target="_blank">mathtoolbox.blogix.ir</a></p>
-                <p><i class="fab fa-github"></i> مخزن گیت‌هاب: <a href="#">https://github.com/sadra-hatami/mathematics.toolbox</a></p>
-                <p style="margin-top: 30px; color: #FF9800;">توسعه‌دهنده: صدرا حاتمی</p>
-            </div>
-        </div>
-    </section>
+  <section id="contact">
+    <h2>📞 ارتباط و پشتیبانی</h2>
+    <p>برای گزارش خطا، پیشنهاد ابزار جدید یا هرگونه سوال:</p>
+    <ul>
+        <li>ایمیل پشتیبانی: <a href="mailto:mathematics.toolbox.sadra@gmail.com">mathematics.toolbox.sadra@gmail.com</a></li>
+        <li>وبلاگ رسمی برنامه: <a href="https://mathtoolbox.blogix.ir" target="_blank">mathtoolbox.blogix.ir</a></li>
+        <li>مخزن سورس کد گیت‌هاب: <a href="https://github.com/sadra1732/mathematics.toolbox.github.io" target="_blank">مشاهده پروژه گیت‌هاب</a></li>
+    </ul>
+  </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© ۱۴۰۴ - جعبه ابزار ریاضیات - تمامی حقوق محفوظ است.</p>
-            <p>طراحی شده با ❤️ برای جامعه ریاضی‌دانان ایران</p>
-            <div class="social">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    © ۱۴۰۴ - جعبه ابزار ریاضیات | توسعه‌دهنده: صدرا حاتمی | تمامی حقوق محفوظ است.
+  </footer>
+
 </body>
 </html>
