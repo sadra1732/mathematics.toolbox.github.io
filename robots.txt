@@ -1,0 +1,3 @@
+   User-agent: *
+   Allow: /
+   Sitemap: https://sadra1732.github.io/Mathematics_Toolbox/sitemap.xml
