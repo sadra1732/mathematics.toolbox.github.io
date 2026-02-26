@@ -25,6 +25,8 @@ Mathematics Toolbox - v1.7.22
 
 📅 تاریخ انتشار (نسخه: 1.7.22): 1404/11/9
 
+🌐 وبسایت برنامه: https://sadra1732.github.io/Mathematics_Toolbox/
+
 🌐 وبلاگ برنامه: https://mathtoolbox.blogix.ir
 
  
